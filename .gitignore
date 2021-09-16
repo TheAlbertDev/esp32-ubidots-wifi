@@ -1,0 +1,8 @@
+# Personal configuration
+.vscode/
+
+# Output folder
+build/
+
+# File with sensitive data
+private_data.h
