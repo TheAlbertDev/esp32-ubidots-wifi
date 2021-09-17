@@ -84,7 +84,7 @@ void loop()
     if (abs(millis() - timer) > PUBLISH_FREQUENCY)
     {
         adcValue = analogRead(ADC_PIN);
-        ubidots.add("temperature", (float)adcValue);
+        ubidots.add("adc", (float)adcValue);
         ubidots.publish("esp32-01");
         timer = millis();
     }
